@@ -16,8 +16,12 @@ export default {
   <h1>{{ msg }}</h1>
 </template>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
+<style lang="scss" scoped>
+h1 {
+  color: red;
+
+  &:hover {
+    color: green;
+  }
 }
 </style>
