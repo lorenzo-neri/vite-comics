@@ -1,5 +1,7 @@
 <script>
 import Header from './components/Header.vue';
+import Main from './components/Main.vue';
+
 
 export default {
 
@@ -11,13 +13,17 @@ export default {
     },
     components: {
         Header,
+        Main,
     }
 
 }
 </script>
 
 <template>
-    <Header></Header>
+    <div class="container">
+        <Header></Header>
+        <Main></Main>
+    </div>
 </template>
 
 <style lang="scss"></style>
