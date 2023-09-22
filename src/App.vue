@@ -1,7 +1,6 @@
 <script>
-import Header from './components/Header.vue';
-import Main from './components/Main.vue';
-
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
 
@@ -12,18 +11,28 @@ export default {
         }
     },
     components: {
-        Header,
-        Main,
+
+        AppHeader,
+        AppMain,
     }
 
 }
 </script>
 
 <template>
-    <div class="container">
-        <Header></Header>
-        <Main></Main>
-    </div>
+    <header>
+        <div class="container">
+            <AppHeader></AppHeader>
+        </div>
+    </header>
+    <AppMain></AppMain>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+@import '../src/assets/scss/app.scss';
+
+/* ho trovato un altro metodo per suddividere l'header e dargli un colore di sfondo ma è più scomdo */
+header {
+    background-color: $dc-white;
+}
+</style>
