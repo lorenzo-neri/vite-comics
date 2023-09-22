@@ -16,6 +16,8 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <Header></Header>
+</template>
 
 <style lang="scss"></style>
