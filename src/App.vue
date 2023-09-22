@@ -1,9 +1,21 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import Header from './components/Header.vue';
+
+export default {
+
+    name: 'App',
+    data() {
+        return {
+
+        }
+    },
+    components: {
+        Header,
+    }
+
+}
 </script>
 
-<template>
-    <HelloWorld class="bg-dark"></HelloWorld>
-</template>
+<template></template>
 
 <style lang="scss"></style>
