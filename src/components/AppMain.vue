@@ -19,9 +19,7 @@ export default {
 
 <template>
     <div id="jumbotron">
-        <div class="container">
-            <h2>Content goes here</h2>
-        </div>
+
     </div>
     <!-- /#jumbotron -->
 
@@ -51,8 +49,12 @@ export default {
 }
 
 #jumbotron {
-    background-color: $dc-black;
-    padding: 3rem 0;
+
+    background-image: url(../../src/assets/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
 }
 
 #sections_bar {
