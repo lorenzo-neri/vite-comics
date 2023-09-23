@@ -8,7 +8,9 @@ export default {
             cardsArray: [
                 { title: 'DIGITALS COMICS', image: '../../src/assets/img/buy-comics-digital-comics.png' },
                 { title: 'DC MERCHANDISE', image: '../../src/assets/img/buy-comics-merchandise.png' },
-                { title: 'SUBCRIPTION', image: '' }
+                { title: 'SUBCRIPTION', image: '../../src/assets/img/buy-comics-subscriptions.png' },
+                { title: 'COMIC SHOP LOCATOR', image: '../../src/assets/img/buy-comics-shop-locator.png' },
+                { title: 'DC POWER VISA', image: '../../src/assets/img/buy-dc-power-visa.svg' }
             ]
         }
     }
@@ -25,7 +27,16 @@ export default {
 
     <div id="sections_bar">
         <div class="container">
-            <div></div>
+            <div class="row p-2">
+
+                <div class="col d-flex justify-content-center align-items-center gap-3 p-3"
+                    v-for="(card, i) in this.cardsArray">
+                    <img :src="card.image" alt="" class="">
+                    <div id="title" class="fw-semibold">{{ card.title }}</div>
+                </div>
+
+            </div>
+            <!-- /.row -->
         </div>
         <!-- /.container -->
     </div>
@@ -46,5 +57,13 @@ export default {
 
 #sections_bar {
     background-color: $dc-primary;
+
+    img {
+        width: 3rem;
+    }
+
+    #title {
+        font-size: .8rem;
+    }
 }
 </style>
