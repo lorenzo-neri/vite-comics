@@ -27,9 +27,9 @@ export default {
 
     <div id="sections_bar">
         <div class="container">
-            <div class="row p-2">
+            <div class="row p-5">
 
-                <div class="col d-flex justify-content-center align-items-center gap-3 p-3"
+                <div class="col d-flex justify-content-center align-items-center gap-2 p-3"
                     v-for="(card, i) in this.cardsArray">
                     <img :src="card.image" alt="" class="">
                     <div id="title" class="fw-semibold">{{ card.title }}</div>
