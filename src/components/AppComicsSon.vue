@@ -13,8 +13,8 @@ export default {
 </script>
 
 <template>
-    <div class="card bg-transparent text-white border-0 p-2 py-3">
-        <div class="square-image">
+    <div class="card bg-transparent text-white border-0 p-1 py-2">
+        <div class="square_image">
             <img :src="lnThumb" class="card-img-top" :alt="lnSeries">
         </div>
         <div class="card-body text-uppercase">
@@ -24,7 +24,7 @@ export default {
 </template>
   
 <style lang="scss" scoped>
-.square-image {
+.square_image {
     position: relative;
     width: 100%;
     padding-top: 100%;
@@ -37,5 +37,9 @@ export default {
         width: 100%;
         height: auto;
     }
+}
+
+.card-body {
+    font-size: .8rem;
 }
 </style>
