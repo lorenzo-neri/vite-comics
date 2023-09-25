@@ -7,15 +7,28 @@ export default {
         lnPrice: String,
         lnSeries: String,
         lnType: String,
-    }
+    },
 
+
+    /* FUNZIONE PER IMPORTARE CORRETTAMENTE LE IMMAGINI DOPO UNA BUILD */
+    methods: {
+        getImageUrl(name) {
+            return new URL(`${name}`, import.meta.url).href
+        }
+    } //#####
+
+    /* ALLEGO SINTASSI BASE */
+    /* function getImageUrl(name) {
+    return new URL(`./dir/${name}.png`, import.meta.url).href
+    } */
+    /* https://vitejs.dev/guide/assets.html */
 }
 </script>
 
 <template>
     <div class="card bg-transparent text-white border-0 p-1 py-2">
-        <div class="square_image">
-            <img :src="lnThumb" class="card-img-top" :alt="lnSeries">
+        <div class="square_image"> <!-- ##### -->
+            <img :src="getImageUrl(lnThumb)" class="card-img-top" :alt="lnSeries">
         </div>
         <div class="card-body text-uppercase">
             <div>{{ lnSeries }}</div>
