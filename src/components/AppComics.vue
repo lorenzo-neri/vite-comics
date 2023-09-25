@@ -7,16 +7,22 @@ export default {
 
     data() {
         return {
-            comics
+            comics: comics
         }
     }
 }
 </script>
 
 <template>
-    <div v-for="comic in comics">
+    <!-- TODO modifica sintassi immagini per build -->
+    <div class="col-md-2" v-for="comic in comics">
 
-        <div>{{ comic.series }}</div>
+        <div class="card">
+            <img :src="comic.thumb" class="card-img-top" :alt="comic.series">
+            <div class="card-body">
+                <div>{{ comic.series }}</div>
+            </div>
+        </div>
 
     </div>
 </template>

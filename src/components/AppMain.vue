@@ -24,12 +24,30 @@ export default {
 </script>
 
 <template>
-    <div id="jumbotron">
+    <!-- TODO modifica sintassi immagini per build -->
+    <section id="jumbotron">
 
-    </div>
+    </section>
     <!-- /#jumbotron -->
 
-    <div id="sections_bar">
+
+    <section id="app_comics">
+        <div class="container">
+            <div class="row px-2 py-3 justify-content-center">
+
+
+
+                <AppComics />
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /#app_comics -->
+
+    <section id="sections_bar">
         <div class="container">
             <div class="row p-5">
 
@@ -43,25 +61,8 @@ export default {
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </div>
+    </section>
     <!-- /#sections_bar -->
-
-    <div class="container">
-        <div class="row justify-content-center">
-
-            <div class="col-8 p-0">
-
-                <div class="d-flex align-items-center text-danger">
-
-                    <AppComics />
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -78,6 +79,10 @@ export default {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 500px;
+}
+
+#app_comics {
+    background-color: $dc-black;
 }
 
 #sections_bar {

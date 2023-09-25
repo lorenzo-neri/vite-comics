@@ -14,6 +14,8 @@ export default {
 </script>
 
 <template>
+    <!-- TODO modifica sintassi immagini per build -->
+
     <div class="container min-vw-100">
 
         <div class="row flex-column justify-content-flex-end dc-footerCont">
