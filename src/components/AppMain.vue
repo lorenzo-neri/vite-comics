@@ -1,7 +1,13 @@
 <script>
+import AppComics from './AppComics.vue';
+
 export default {
 
     name: 'AppMain',
+
+    components: {
+        AppComics
+    },
 
     data() {
         return {
@@ -39,6 +45,23 @@ export default {
         <!-- /.container -->
     </div>
     <!-- /#sections_bar -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-8 p-0">
+
+                <div class="d-flex align-items-center text-danger">
+
+                    <AppComics />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
